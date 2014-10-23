@@ -1,3 +1,4 @@
+//John Ryan Dodson 02/12/2014
 #include <ncurses.h>
 #include <stdio.h>
 #include <unistd.h>
