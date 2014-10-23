@@ -64,7 +64,7 @@ void erase_coords (int y, int x) {
 	mvaddch(y, x, ' ');
 	pthread_mutex_unlock(&mutex);
 }
-void initCurses() {
+void init_curses() {
 	initscr();
 	clear();
 	noecho();
@@ -191,7 +191,7 @@ int main(int argc, char** argv) {
 	
 	int row = 28, col = 37;
 
-	initCurses();
+	init_curses();
 
 	printw("Welcome to Space Invaders.\nPlease select your difficulty:\n(h)ard\n(n)ormal\n(e)asy\nTo quit press \'q\'");
 
